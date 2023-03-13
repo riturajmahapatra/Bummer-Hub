@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* All the prerequisites are above that we are going to use */
+
+/* below are the utility classes */
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+    transition: 0.4s ease-in-out;
+
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: white !important;
+    padding: 12px 24px;
+    transition: 0.1s ease-in;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button {
+    border-radius: 6px;
+    font-weight: 550;
+    border: 0.5px solid var(--secondary-text-color);
+    padding: 12px 24px;
+    color: var(--primary-text-color);
+    transition: 0.2s ease-in-out;
+}
+
+.secondary-button:hover {
+    border-color: var(--accent-color);
+    /*     color: var(--accent-color) !important ;
+ */
+}
+
+/* styling */
+
+/* top banner */
+
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.topbanner {
+    background-image: url('./assets/asset\ 32.png');
+    background-color: #e74694;
+    background-size: 300px;
+}
+
+/* Navigation bar */
+.main-nav {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.company-logo img {
+    width: 200px;
+
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+header {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section {
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left {
+    max-width: 40vw;
+}
+
+.header-left h1 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.header-left p {
+    margin-bottom: 20px;
+
+}
+
+.header-right img {
+    width: 600px;
+}
+
+/* companies header */
+.company-header {
+    margin-block: 50px;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.logos {
+    justify-content: space-between;
+}
+
+.small-company-logos img {
+    height: 46px;
+    gap: 20px;
+}
+
+/* features - section*/
+
+.features-header {
+    text-align: center;
+    margin-block: 50px;
+}
+
+.features-body {
+    flex-wrap: wrap;
+    /* most important command until this happens max-width wont work even gap wont work */
+    justify-content: space-between;
+}
+
+.features-card {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.features-card p {
+    text-align: center;
+}
+
+.features-card-img {
+    width: 55px;
+}
+
+/* big-feature-section */
+
+.big-feature-section {
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+.big-feature-1 {
+    gap: 50px;
+}
+
+.big-feature-img img {
+    width: 100%;
+}
+
+.big-feature-1-desc {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.pos {
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.company-names-logo {
+    margin-block: 20px;
+    width: 100px;
+}
+
+/* examples section */
+
+.examples-header {
+    margin-block: 30px;
+    flex-direction: column;
+}
+
+.examples-area {
+    justify-content: space-between;
+}
+
+.examples-cards {
+    align-content: space-between;
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(./assets/asset\ 36.jpeg);
+}
+
+.examples-cards:hover {
+    box-shadow: 0 0 10px #888;
+    transition: 0.3s ease-in-out;
+
+}
+
+.examples-cards:nth-child(1) {
+    background-size: cover;
+}
+
+.examples-cards:nth-child(2) {
+    background-size: cover;
+}
+
+.examples-cards:nth-child(3) {
+    background-size: cover;
+}
+
+.examples-cards:nth-child(4) {
+    background-size: cover;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    color: whitesmoke;
+}
+
+/* cta-section */
+
+.cta-section {
+    background-color: var(--primary-text-color);
+    margin-block: 50px;
+}
+
+.cta-text {
+    flex-direction: column;
+    color: white;
+    align-items: start;
+    gap: 2px;
+}
+
+.cta-img img {
+    width: 100%;
+}
+
+.ULs {
+    padding-left: 20px;
+    margin-block: 20px;
+}
+
+.second-ul {
+    padding-left: 80px;
+}
+
+.ULs ul {
+    list-style: circle;
+}
+
+.cta-footer {
+    text-align: center;
+}
+
+/* main footer and subfooter */
+.links {
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.links a {
+    margin-block: 5px;
+    color: var(--secondary-text-color);
+}
+
+.cmp {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-block: 50px;
+}
+
+footer{
+    margin-top: 50px;
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+
+.subfooter{
+background-color: #b9cde4;
+padding: var(--padding-inline-section);
+align-items: center;
+}
+.subfooter-container{
+    justify-content: center;
+    gap: 30px;
+}
+.subfooter-container img{
+    width: 20px;
+}
+.subfooter-container a{
+    color:var(--secondary-text-color)
+}
